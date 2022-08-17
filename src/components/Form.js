@@ -12,7 +12,7 @@ export default function Form(){
              randomImage :"https://media.istockphoto.com/photos/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised-picture-id1361394182?b=1&k=20&m=1361394182&s=170667a&w=0&h=cW_NDV-D-jrWBVcEPclIU9vRipFQZQC0armvGMN7w-c="
         }
     )
-    const [allMemeImages, setAllMemeImages]= React.useState(meme)
+    const [allMemeImages]= React.useState(meme)
     //console.log(allMemeImages);
     
     function getMemeImage(){
@@ -35,7 +35,7 @@ export default function Form(){
                 <input type='text' placeholder="Bottom Text" className="form-input"/>
                 <button className="form-button" onClick={getMemeImage}>Get New Meme Image</button>
             </div>
-            <img src={memeImage.randomImage} alt="image mpya" className="image-field"/>
+            <img src={memeImage.randomImage} alt="mpya" className="imfield"/>
         </main>
     )
 }
