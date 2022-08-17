@@ -9,7 +9,7 @@ export default function Navbar(){
                 <img src={logo} className="logo" alt="logo" />
                 <h2 className="header--title">Meme Generator</h2>
                            
-                <h4 className="header--project">React Project 3</h4>
+                <h4 className="header--project">Meme A Day Keeps Stress Away</h4>
              
         </header>
     )
