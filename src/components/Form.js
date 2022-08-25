@@ -1,6 +1,6 @@
 import React from "react";
 import meme from "../memedata";
-
+import Draggable from "react-draggable";
 //console.log(meme[1].url)
 export default function Form(){
 
@@ -43,6 +43,7 @@ export default function Form(){
                  value={memeImage.topText}
                  onChange={handleChange}
                  />
+                
                 <input 
                 type='text'
                 placeholder="Bottom Text"
@@ -61,8 +62,15 @@ export default function Form(){
             </div>
             <div className="meme">
                 <img src={memeImage.randomImage} alt="mpya" className="imfield"/>
-                <h2 className="meme--text-top">{memeImage.topText}</h2>
-                <h2 className="meme--text-bottom">{memeImage.bottomText}</h2>
+                <Draggable>
+                    <h2 className="meme--text-top">{memeImage.topText}</h2>
+                </Draggable>
+                <Draggable>
+                    <h2 className="meme--text-bottom">{memeImage.bottomText}</h2>
+                </Draggable>
+
+               
+               
             </div>
         </main>
     )
